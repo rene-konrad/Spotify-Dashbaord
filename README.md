@@ -46,39 +46,6 @@ Ortsanalyse, mit Anzeige wo am meisten Musik über das Jahr gehört wurde, mit i
 
 ![Aufzeichnung 2025-10-23 215633](https://github.com/user-attachments/assets/4a67b20d-5614-49bf-bc28-367acf426e11)
 
-🧩 Datenmodell & SQL-Analysen
-
-Die Daten wurden in einer relationalen Struktur aufbereitet und in Dimensionstabellen überführt (z. B. dim_date, dim_time, dim_album, dim_artist, dim_location).
-
-Beispiel: Minutenberechnung
-ALTER TABLE spotify_dataset_combined ADD COLUMN minutes_played DECIMAL(10,2);
-UPDATE spotify_dataset_combined 
-SET minutes_played = ROUND(ms_played / 60000.0, 2);
-
-Beispielabfragen
-
-Top 10 Artists
-
-WITH artist_plays AS (
-  SELECT master_metadata_album_artist_name AS artist,
-         SUM(ms_played / 60000.0) AS minutes_played
-  FROM spotify_dataset_combined
-  WHERE master_metadata_album_artist_name IS NOT NULL
-  GROUP BY master_metadata_album_artist_name
-)
-SELECT artist, minutes_played, RANK() OVER (ORDER BY minutes_played DESC) AS rank
-FROM artist_plays
-WHERE rank <= 10;
-
-
-Jährliche Hörzeit
-
-SELECT SUBSTRING(ts,1,4) AS year,
-       SUM(minutes_played) AS total_minutes
-FROM spotify_dataset_combined
-GROUP BY year
-ORDER BY year;
-
 🧾 Erkenntnisse
 
 Deutliche Unterschiede zwischen Lebensphasen:
