@@ -46,17 +46,5 @@ Ortsanalyse, mit Anzeige wo am meisten Musik über das Jahr gehört wurde, mit i
 
 ![Aufzeichnung 2025-10-23 215633](https://github.com/user-attachments/assets/4a67b20d-5614-49bf-bc28-367acf426e11)
 
-Erkenntnisse
-
-Deutliche Unterschiede zwischen Lebensphasen:
-
-Schülerzeit → längere Abendaktivität
-
-Studium → unregelmäßiges Muster
-
-Vollzeitjob → stärker strukturierter Rhythmus
-
-Ortsabhängigkeit: Mehr Streaming in Urlaubsländern als auf Abentteuertrips
-
 
  
