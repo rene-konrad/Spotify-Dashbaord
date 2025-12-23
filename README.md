@@ -1,11 +1,11 @@
-# 🎧 Spotify Listening Behavior Dashboard  
+# Spotify Listening Behavior Dashboard  
 
 Ein datengetriebenes Dashboard-Projekt zur **Analyse des persönlichen Spotify-Hörverhaltens**.  
 Ziel war es, Muster im Musikverhalten zu erkennen — etwa bevorzugte Künstler, zeitliche Hörgewohnheiten und Orte, an denen besonders viel Musik gehört wurde.  
 
 ---
 
-## 📊 Projektüberblick  
+## Projektüberblick  
 
 Das Projekt kombiniert **Python**, **SQL** und **Power BI**, um Streamingdaten aus Spotify-Exports zu bereinigen, zu analysieren und visuell aufzubereiten.  
 
@@ -17,7 +17,7 @@ Das Projekt kombiniert **Python**, **SQL** und **Power BI**, um Streamingdaten a
 
 ---
 
-## 🧠 Tools & Technologien  
+## Tools & Technologien  
 
 | Tool | Verwendung |
 |------|-------------|
@@ -27,7 +27,7 @@ Das Projekt kombiniert **Python**, **SQL** und **Power BI**, um Streamingdaten a
 
 ---
 
-## 🗂️ Datenbasis  
+## Datenbasis  
 
 Die Daten stammen aus dem **Spotify Data Export** (JSON-Dateien), die jährlich bereitgestellt werden.  
 In Python wurden alle JSONs **zusammengeführt** und als **CSV** exportiert.
@@ -46,7 +46,7 @@ Ortsanalyse, mit Anzeige wo am meisten Musik über das Jahr gehört wurde, mit i
 
 ![Aufzeichnung 2025-10-23 215633](https://github.com/user-attachments/assets/4a67b20d-5614-49bf-bc28-367acf426e11)
 
-🧾 Erkenntnisse
+Erkenntnisse
 
 Deutliche Unterschiede zwischen Lebensphasen:
 
